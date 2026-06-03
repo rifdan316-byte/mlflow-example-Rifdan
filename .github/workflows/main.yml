@@ -1,0 +1,15 @@
+name: CI MLflow
+ 
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+ 
+env:
+  CSV_URL: "Project/wine-quality.csv"
+  TARGET_VAR: "quality"
+  ALPHA: 0.5
+  L1_RATIO: 0.5
